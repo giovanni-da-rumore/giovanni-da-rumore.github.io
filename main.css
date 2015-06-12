@@ -1,0 +1,324 @@
+html, body, header, nav, h1, a, h3, h2,
+ul, li, input, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+body {
+  background: #003366;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  background: #000;
+  position: relative;
+  opacity: 1;
+  overflow: none;
+
+}
+
+
+header:after {
+  background-image: url("./images/narcissus.jpg");
+  background-position: left 0px top -200px;
+  background-size: 100% 250%;
+  width: 100%;
+  height: 400px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  content: "";
+
+}
+
+.header-nav {
+  z-index: 10;
+  opacity: 1;
+  position: relative;
+  margin: auto;
+
+}
+
+.header-right {
+  display: block;
+  float: right;
+  width: 450px;
+  margin-top: 45px;
+
+}
+
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 1px #ccc;
+  display: block;
+  float: right;
+  margin-right: 40px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 1;
+  letter-spacing: 1.3;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 1px #ccc;
+  float: left;
+  position: absolute;
+  top: 285px;
+  left: 15px;
+  letter-spacing: 1.1;
+  quotes: "\201C""\201D""\2018""\2019";
+
+}
+
+
+h2:before {
+  content: open-quote;
+  margin-right: 2px;
+  font-size: 40px;
+  vertical-align: -2;
+}
+
+h2:after {
+  content: close-quote;
+  font-size: 40px;
+  margin-left: -9px;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+
+}
+
+
+
+main {
+  min-height: 600px;
+  margin: auto;
+  display: block;
+  width: 975px;
+}
+
+.left-sidebar {
+  background: #26619C;
+  background: #003366;
+  float: left;
+  border-left: 1px solid #fff;
+}
+
+.side-list {
+  padding: 20px;
+  padding-top: 10px;
+  width: 169px;
+}
+
+.side-list li {
+  padding: 10px;
+  padding-left: 5px;
+  width: 120px;
+  color: #f5f5f5;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+  text-align: left;
+}
+
+
+.side-list a {
+  padding-bottom: 5px;
+  padding-right: 3px;
+  letter-spacing: 1.2;
+
+}
+
+.side-list a:hover {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+
+
+.main-section {
+  float: right;
+  width: 650px;
+  margin-right: 50px;
+  background: #fff;
+  padding: 15px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+
+.main-section-header {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  letter-spacing: 1.2;
+  /*margin-left: -10px;*/
+
+}
+
+
+.fixed {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+}
+
+
+.separator {
+  float: left;
+  margin-bottom: 10px;
+
+}
+
+
+
+p {
+/*line-height: 1.1;*/
+letter-spacing: 1.1;
+}
+
+.skills-sprites li {
+  padding: 8px;
+  float: left;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: bold;
+  color: #A9A9A9;
+}
+
+.skills-sprites {
+  width: 600px;
+  float: left;
+}
+
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+.project-image {
+  display: block;
+  float: left;
+  width: 200px;
+  height: 175px;
+  margin-top: 21px;
+
+}
+
+.project-title {
+  float: left;
+  width: 250px;
+  font-size: 23px;
+  margin-left: 25px;
+  margin-bottom: 8px;
+  font-style: italic;
+  letter-spacing: 1.1;
+}
+
+.project-descr {
+  float: left;
+  width: 400px;
+  margin-left: 28px;
+
+}
+
+article {
+  margin-bottom: 25px;
+  /*margin-top: 10px;*/
+  float: left;
+  letter-spacing: 1.2;
+}
+
+
+.email {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1.1;
+  color: #26619c;
+  display: block;
+  float: left;
+  margin-top: 55px;
+
+}
+
+.email:hover {
+  color: #007FFF;
+  color: #003366;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #26619c;
+}
+
+
+.personal-picture {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: block;
+  float: right;
+}
+
+
+.prof-pic {
+  width: 200px;
+  height: 225px;
+
+}
+
+.sign-off {
+  float: left;
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 40px;
+
+}
