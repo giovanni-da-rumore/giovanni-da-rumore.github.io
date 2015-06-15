@@ -54,7 +54,7 @@ header {
 
 
 header:after {
-  background-image: url("./images/narcissus.jpg");
+  background-image: url("./images/narcissus_2.jpg");
   background-position: left 0px top -200px;
   background-size: 100% 250%;
   width: 100%;
@@ -217,22 +217,24 @@ main {
 
 
 p {
-/*line-height: 1.1;*/
 letter-spacing: 1.1;
 }
 
-.skills-sprites li {
-  padding: 8px;
+.skills-pics li {
+  padding: 15px;
+  padding-left: 30px;
   float: left;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  font-weight: bold;
-  color: #A9A9A9;
 }
 
-.skills-sprites {
-  width: 600px;
+.skills-pics {
   float: left;
+  margin-left: 10px;
+}
+
+.skills-pics img {
+  width: 65px;
+  height: 65px;
+
 }
 
 
@@ -248,9 +250,21 @@ img {
   float: left;
   width: 200px;
   height: 175px;
-  margin-top: 21px;
+  margin-top: 25px;
+  background: #000;
 
 }
+
+.project-image img {
+  opacity: 0.9;
+  transition: opacity 0.6s;
+}
+
+.project-image img:hover {
+  opacity: 1;
+}
+
+
 
 .project-title {
   float: left;
@@ -284,14 +298,14 @@ article {
   color: #26619c;
   display: block;
   float: left;
-  margin-top: 55px;
+  margin-top: 30px;
+  margin-left: 15px;
 
 }
 
 .email:hover {
-  color: #007FFF;
   color: #003366;
-  padding-bottom: 3px;
+  /*padding-bottom: 3px;*/
   border-bottom: 1px solid #26619c;
 }
 
@@ -306,6 +320,7 @@ article {
   overflow: hidden;
   display: block;
   float: right;
+  margin-bottom: 25px;
 }
 
 
@@ -321,4 +336,36 @@ article {
   margin-top: 15px;
   margin-left: 40px;
 
+}
+
+
+.greeting {
+  font-size: 17px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.end-link {
+  float: left;
+  margin-top: 20px;
+  margin-right: 85px;
+  margin-left: 27px;
+  color:  #26619c;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.end-link:hover {
+  color: #003366;
+  border-bottom: 1px solid #26619c;
+}
+
+
+.last-link {
+  margin-right: 0px;
+}
+
+.inline-link {
+  color: #26619c;
 }
