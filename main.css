@@ -106,7 +106,7 @@ h2 {
   float: left;
   position: absolute;
   top: 285px;
-  left: 15px;
+  left: 25px;
   letter-spacing: 1.1;
   quotes: "\201C""\201D""\2018""\2019";
 
@@ -136,10 +136,9 @@ h2:after {
 
 
 main {
-  min-height: 600px;
   margin: auto;
   display: block;
-  width: 975px;
+  width: 985px;
 }
 
 .left-sidebar {
@@ -182,7 +181,7 @@ main {
 
 .main-section {
   float: right;
-  width: 650px;
+  width: 660px;
   margin-right: 50px;
   background: #fff;
   padding: 15px;
@@ -248,20 +247,21 @@ img {
 .project-image {
   display: block;
   float: left;
-  width: 200px;
-  height: 175px;
-  margin-top: 25px;
+  width: 210px;
+  height: 185px;
+  margin-top: 21px;
   background: #000;
+  border: 1px solid #ccc;
 
 }
 
 .project-image img {
-  opacity: 0.9;
-  transition: opacity 0.6s;
+  opacity: 1;
+  transition: opacity 0.1
 }
 
 .project-image img:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 
@@ -274,6 +274,23 @@ img {
   margin-bottom: 8px;
   font-style: italic;
   letter-spacing: 1.1;
+}
+
+.project-title:hover {
+  color: #26619c;
+}
+
+.project-git {
+  font-size: 18px;
+  display: bock;
+  float: left;
+  margin-top: 3px;
+  color: #26619c;
+}
+
+.project-git:hover {
+  border-bottom: 1px solid #26619c;
+  color: #003366;
 }
 
 .project-descr {
