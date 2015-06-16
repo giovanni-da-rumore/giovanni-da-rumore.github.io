@@ -54,7 +54,7 @@ header {
 
 
 header:after {
-  background-image: url("./images/narcissus_2.jpg");
+  background-image: url("./images/narcissus_img1.jpg");
   background-position: left 0px top -200px;
   background-size: 100% 250%;
   width: 100%;
@@ -105,7 +105,7 @@ h2 {
   -webkit-text-stroke: 1px #ccc;
   float: left;
   position: absolute;
-  top: 285px;
+  top: 275px;
   left: 25px;
   letter-spacing: 1.1;
   quotes: "\201C""\201D""\2018""\2019";
