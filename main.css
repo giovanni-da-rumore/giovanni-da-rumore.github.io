@@ -49,7 +49,7 @@ header {
   background: #000;
   position: relative;
   opacity: 1;
-  overflow: none;
+  overflow: hidden;
 
 }
 
@@ -139,8 +139,9 @@ h2:after {
 main {
   margin: auto;
   display: block;
-  width: 995px;
+  width: 985px;
   height: 100%;
+  max-width: 100%;
 }
 
 .left-sidebar {

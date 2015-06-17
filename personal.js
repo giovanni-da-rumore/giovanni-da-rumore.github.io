@@ -7,21 +7,12 @@
 var View = Personal.View = function () {
   var that = this;
   this.$el = $('body');
-  this.$el.on('click', this.scam.bind(this));
 };
 
 
 View.prototype.scam = function () {
 };
 
-
-// var urlParse = function () {
-//   var urlInfo = window.location.href.split("#/")[1]
-//    if (urlInfo == "projects") {
-//      window.scroll(0, 350);
-//    }
-// }
-// urlParse();
 
 
 
