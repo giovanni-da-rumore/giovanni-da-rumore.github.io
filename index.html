@@ -1,31 +1,53 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
   <body>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <!-- <header group> -->
+    <div class="video-wrapper">
+        <!-- loop autoplay /\ -->
+		<video id="header-video" preload="metadata" poster="">
+			<source src="videos/great_beauty.webm" type="video/webm">
+			<source src="videos/great_beauty.mp4" type="video/mp4">
+		</video>
+		<!-- <div class="statement wow fadeIn">
+			<h1 class="text-center">The Recruiting Platform for College <?=$this->site->sport_name?></h1>
+			<span class="red-hr"></span>
+			<p class="text-center lead"> Empowering Student-Athletes to Pursue Their Dreams</p> -->
+      <header class="header-info">
+            <!-- <div class="header-right"> -->
+            <!-- <div class="header-info"> -->
+                
+          <h1 class="header-text left">Jeremy Lilly</h1>
+          <div class="personal-picture">
+            <img class="prof-pic" src="./images/prof_pic.jpg"/>
+          </div>
+          <h1 class="header-text right">Web Developer</h1>
+      <!-- </div> -->
+          <!-- </div> -->
+        <!-- <h2 class="header-quote">Happy was he who was able to reckon the nature of things. -->
+          <!-- </h2> -->
+      </header>
+  </div>
 
-    <style media="screen">
 
-
-
-  </style>
-
-
-    <header group>
-      <nav class="header-nav group">
-        <section class="header-right">
-          <h1 class="header-name">Jeremy Lilly</h1>
-          <h1 class="header-title">Web Developer</h1>
-        </section>
-        <h2 class="header-quote">Happy was he who was able to reckon the nature of things.
-          </h2>
-      </nav>
-    </header>
-
-    <main class="page-body group">
-      <section class="left-sidebar group">
+    <main class="main-content group">
+        <!-- <nav>
+            <ul>
+                <li class="in-site-link">About</li>
+                <li>Github</li>
+                <li>Linkedin</li>
+                <li class="in-site-link">Contact</li>
+            </ul>
+        </nav> -->
+      <!-- <section class="left-sidebar group">
         <ul class="side-list group">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -34,51 +56,26 @@
             Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
-
-      <section class="main-section group">
-        <section class="about separator group ">
-
-        <h3 id="about" class="main-section-header">About</h3>
-        <p class="line-break">
-          <!-- <div class="greeting"><i>Salve!</i></div> -->
-          <!-- Ultimately, I aim to fuse my two main interests to, with the help of comp sci,
-          help humanities not merely endure, but prevail within the digital age. -->
-          <!-- Programming is my current focus, but one of these days I plan to marry my two main passions
-          use computer science to help humanities not merely endure, but prevail within the digital age. -->
-          I'm a New York City based web developer with experience in Ruby, Rails, Python, JavaScript and Backbone.js.
-          In addition, I received a B.A. in Classics from Columbia University in 2013. For interests, perhaps it's best to say that I love all things language-related, without a humanist bias.
-          If you'd like to discuss anything from Plato to Python, Sappho to SQL,
-          Ovid to optimization (et al. alliterations), feel free to <a href="#contact" class="inline-link">contact</a> me below ^_^
-        </p>
-
-
-      </section>
-
-      <section class="skills separator group">
-        <h3 id="skills" class="main-section-header">Skills</h3>
+      </section> -->
+      <!-- If you'd like to discuss anything from Plato to Python, Sappho to SQL,
+      Ovid to optimization (et al. alliterations), feel free to <a href="#contact" class="inline-link">contact</a> me below  -->
+    <section class="content-section group">
+        <h3 id="about" class="content-header">About</h3>
         <p>
-          <ul class="skills-pics">
-            <li> <img src="./images/ruby.png" alt="Ruby" /></li>
-            <li> <img src="./images/rails.png" alt="Ruby on Rails" /></li>
-            <li> <img src="./images/js.png" alt="Javascript" /></li>
-            <li> <img src="./images/backbone.png" alt="Backbone.js" /></li>
-            <li> <img src="./images/jquery.png" alt="jQuery" /></li>
-            <li> <img src="./images/css.png" alt="CSS" /></li>
-            <li> <img src="./images/html.png" alt="HTML" /></li>
-            <li> <img src="./images/python.png" alt="Python" /></li>
-            <li> <img src="./images/psql.png" alt="SQL" /></li>
-            <li> <img src="./images/git.png" alt="Git" /></li>
-
-          </ul>
-        </p>
-
-      </section>
-
-
-        <section class="projects separator group">
-        <h3 id="projects" class="main-section-header">Projects</h3>
-          <article class="odd group">
+          I'm a New York City web developer who, before converting to the darkside, studied Classics at Columbia. 
+          I'm interested in all things language-related - human, computer, musical, visual καὶ τὰ λοιπά. 
+          Drop me a line if you too, <i>gentil lecteur</i>, would like to help old works flourish in the new age.
+          Data, Design and David Bowie are also welcome conversation topics.
+      </p>
+  </section>
+        <section class="content-section group">
+        <h3 id="projects" class="content-header">Work</h3>
+        
+        I currently work as a full-stack engineer at <a href="http://lacrosserecruits.com" target="_blank">SportsRecruits</a>.
+        In addition, I've done freelance work for as diverse companies as environmental surveying agencies and water transportation groups.
+        If you have a minute to spare, you maybe you'll enjoy this <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">javascript version of asteroids</a> I made a while back. If anything, the music
+        (kraftwerk) and pictures (mostly sicilian temples) are quite nice.  
+          <!-- <article class="odd group">
 
             <div class="project-image">
               <a href="http://www.cicadas-song.com/" target="_blank">
@@ -142,51 +139,42 @@
                 The game is built in Ruby, and uses Colorize and UTF-8 characters for an aesthetically pleasing
                 interface.
               </p>
-          </article>
+          </article> -->
 
         </section>
 
+        <section class="content-section group">
+          <h3 id="skills" class="content-header">Skills</h3>
+          <p>
+              PHP, Javascript, Ruby on Rails, Backbone.js, Python, Ember.js, SCSS/CSS, SQL Git, Rspec
+            <!-- <ul class="skills-pics"> -->
+                
+              <!-- <li> <img src="./images/ruby.png" alt="Ruby" /></li>
+              <li> <img src="./images/rails.png" alt="Ruby on Rails" /></li>
+              <li> <img src="./images/js.png" alt="Javascript" /></li>
+              <li> <img src="./images/backbone.png" alt="Backbone.js" /></li>
+              <li> <img src="./images/jquery.png" alt="jQuery" /></li>
+              <li> <img src="./images/css.png" alt="CSS" /></li>
+              <li> <img src="./images/html.png" alt="HTML" /></li>
+              <li> <img src="./images/python.png" alt="Python" /></li>
+              <li> <img src="./images/psql.png" alt="SQL" /></li>
+              <li> <img src="./images/git.png" alt="Git" /></li> -->
+
+            <!-- </ul> -->
+          </p>
+        </section>
 
 
-        <section class="contact separator group">
-        <h3 id="contact" class="main-section-header">Contact</h3>
-
-        <p>
-          Drop me a line if you too, <i>gentil lecteur</i>, would like to help old works flourish in the new age.
-          Data, Design and David Bowie are also welcome conversation topics.
-        </p>
-
-        <div class="sign-off"><i>Vale</i></div>
-
-
-          <div class="personal-picture">
-            <img class="prof-pic" src="./images/prof_pic.jpg"/>
-          </div>
-
-
-          <a href="mailto:jsl2184@gmail.com" class="email">jsl2184@gmail.com</a>
-
-          <a/ href="https://github.com/giovanni-da-rumore" class="end-link"  target="_blank">Github
-          <a/ href="https://www.linkedin.com/in/jeremylilly" class="end-link last-link"  target="_blank">Linkedin
+        <section class="content-section group">
+            <h3 id="contact" class="content-header">Contact</h3>
+            <p>
+            </p>
+            <a href="mailto:jsl2184@gmail.com" class="email">jsl2184@gmail.com</a>
+            <a/ href="https://github.com/giovanni-da-rumore" class="end-link"  target="_blank">Github
+            <a/ href="https://www.linkedin.com/in/jeremylilly" class="end-link last-link"  target="_blank">Linkedin
       </section>
-
-      </section>
-
-
-
-
-
+    </section>
+    <div class="sign-off"><i>Vale</i></div>
     </main>
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="personal.js"></script>
-
-
   </body>
-
-
-
-  <html>
+<html>
