@@ -42,7 +42,7 @@ body {
 }
 
 
-.video-wrapper {
+.header-wrapper {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -52,7 +52,7 @@ body {
     overflow: hidden;
 }
 
-.video-wrapper:after {
+.header-wrapper:after {
     content: '';
     top: 0;
     left: 0;
@@ -60,7 +60,7 @@ body {
     width: 100%;
     /*display: block;*/
     background: #000;
-    opacity: 0.15;
+    opacity: 0.2;
     position: absolute;
     z-index: 4;
 }
@@ -89,21 +89,6 @@ h3 {
     color: #3f87b3;
     /*color: #326b8d;*/
 }
-
-/*header:after {
-  background-image: url("./images/narcissus_img1.jpg");
-  background-image: url("./images/icarus.jpg");
-  background-position: left 0px top -200px;
-  background-size: 100% 250%;
-  width: 100%;
-  height: 400px;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  content: "";
-
-}*/
 
 .header-text {
     position: absolute;
@@ -192,7 +177,11 @@ main {
     float: left;
     padding: 15px 3px;
     /*padding-bottom: 20px;*/
-    /*min-height: 250px;*/
+    min-height: 0;
+}
+
+.content-section:last-of-type {
+    min-height: 0;
 }
 
 .content-header {
@@ -200,31 +189,6 @@ main {
     padding-bottom: 10px;
 }
 
-
-@media (min-width: 778px) {
-    .content-section {
-        width: 45%;
-        margin: 0 15px;
-    }
-}
-
-@media (max-width: 675px) {
-    .header-text {
-        float: left;
-        padding-top: 40px;
-        top: 0;
-        left: 0 !important;
-        right: 0;
-        font-size: 38px;
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .personal-picture {
-        margin-top: 125px;
-    }
-}
 
 .left-sidebar {
   background: #26619C;
@@ -369,59 +333,41 @@ img {
 
 }
 
-article {
-  margin-bottom: 25px;
-  /*margin-top: 10px;*/
-  float: left;
-  letter-spacing: 1.2;
-}
-
-
 .email {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 1.1;
-  color: #26619c;
-  display: block;
-  float: left;
-  margin-top: 30px;
-  margin-left: 15px;
-
+    font-size: 20px;
+    color: #3f87b3;
+    color: #26619c;
 }
 
 .email:hover {
-  color: #003366;
-  /*padding-bottom: 3px;*/
-  border-bottom: 1px solid #26619c;
+    color: #326b8d;
+    color: #003366;
+    font-size: 22px;
+    transition: all 0.3s;
 }
 
 
 .personal-picture {
   width: 200px;
   height: 200px;
-  /*margin-right: 50px;*/
-  /*margin-top: 20px;*/
   border-radius: 50%;
   border: 1px solid #ccc;
   overflow: hidden;
   display: block;
-  /*float: right;*/
-  /*margin-bottom: 25px;*/
 }
 
 
 .prof-pic {
   width: 200px;
   height: 225px;
-
 }
 
 .sign-off {
-  float: left;
-  width: 100px;
-  margin-top: 15px;
-  margin-left: 40px;
-
+    float: right;
+    display: block;
+    color: #3f87b3;
+    font-size: 22px;
+    font-style: italic;
 }
 
 
@@ -433,18 +379,41 @@ article {
 
 
 .end-link {
-  float: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3f87b3;
+    color: #26619c;
+  /*float: left;
   margin-top: 20px;
   margin-right: 85px;
   margin-left: 27px;
   color:  #26619c;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: bold;*/
 }
 
 .end-link:hover {
-  color: #003366;
-  border-bottom: 1px solid #26619c;
+    color: #326b8d;
+    color: #3f87b3;
+    margin-right: 10px;
+    /*color: #003366;*/
+    font-size: 22px;
+    transition: all 0.3s;
+  /*color: #003366;
+  border-bottom: 1px solid #26619c;*/
+}
+
+.end-link:after {
+    content: '|';
+    color: #26619c;
+    color: #000;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.end-link:last-of-type:after {
+    content: "";
+    
 }
 
 
@@ -454,4 +423,37 @@ article {
 
 .inline-link {
   color: #26619c;
+}
+
+
+
+@media (min-width: 778px) {
+    .content-section {
+        width: 45%;
+        margin: 0 15px;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 675px) {
+    .header-text {
+        float: left;
+        padding-top: 40px;
+        top: 0;
+        left: 0 !important;
+        right: 0;
+        font-size: 38px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .personal-picture {
+        margin-top: 125px;
+    }
+    
+    .sign-off {
+        float: none !important;
+        text-align: center;
+    }
 }

@@ -1,18 +1,3 @@
-// (function () {
-//   if (typeof Personal === "undefined") {
-//     window.Personal = {};
-//   }
-// 
-// 
-// var View = Personal.View = function () {
-//   var that = this;
-//   this.$el = $('body');
-// };
-// 
-// })();
-// 
-// 
-
 $(document).ready(function(){
   var video = document.getElementById("header-video")
   video.currentTime = 8;
