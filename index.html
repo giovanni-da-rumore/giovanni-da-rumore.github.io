@@ -8,45 +8,26 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css" type="text/css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="library/jquery.min.js"></script>
     <script src="main.js"></script>
     
     <div class="header-wrapper">
-		<video id="header-video" preload="metadata" autoplay poster="">
+        <!-- autoplay -->
+		<!-- <video id="header-video" preload="metadata" autoplay poster="">
 			<source src="videos/great_beauty.webm" type="video/webm">
 			<source src="videos/great_beauty.mp4" type="video/mp4">
-		</video>
+		</video> -->
+        <!-- <div class="header-img"></div> -->
+        <img class="header-img" src="images/mv_screenshot.png" alt="background-header" />
         <header class="header-info">    
-            <h1 class="header-text left">Jeremy Lilly</h1>
+            <h1 class="header-text left js-info">Jeremy Lilly</h1>
             <div class="personal-picture">
             <img class="prof-pic" src="./images/prof_pic.jpg"/>
             </div>
-            <h1 class="header-text right">Web Developer</h1>
+            <h1 class="header-text right js-info">Web Developer</h1>
         </header>
     </div>
-
-
     <main class="main-content group">
-        <!-- <nav>
-            <ul>
-                <li class="in-site-link">About</li>
-                <li>Github</li>
-                <li>Linkedin</li>
-                <li class="in-site-link">Contact</li>
-            </ul>
-        </nav> -->
-      <!-- <section class="left-sidebar group">
-        <ul class="side-list group">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="https://docs.google.com/document/export?format=pdf&id=1Kzyw2nkuY3JReCozkKW_XHjckhSp5_rgqtGDPYqqJx8">
-            Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </section> -->
-      <!-- If you'd like to discuss anything from Plato to Python, Sappho to SQL,
-      Ovid to optimization (et al. alliterations), feel free to <a href="#contact" class="inline-link">contact</a> me below  -->
         <section class="content-section group">
             <h3 id="about" class="content-header">About</h3>
             <p>
@@ -60,93 +41,13 @@
             <h3 id="projects" class="content-header">Work</h3>
             
             I currently work as a full-stack engineer at <a href="http://lacrosserecruits.com" target="_blank">SportsRecruits</a>.
-            In addition, I've done freelance work for as diverse companies as environmental surveying agencies and water transportation groups.
-            If you have a minute to spare, you maybe you'll enjoy this <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">javascript version of asteroids</a> I made a while back. If anything, the music
-            (kraftwerk) and pictures (mostly sicilian temples) are quite nice.  
-          <!-- <article class="odd group">
-
-            <div class="project-image">
-              <a href="http://www.cicadas-song.com/" target="_blank">
-                <img src="./images/cicadas.png" alt="Insert Screenshot"/>
-              </a>
-             </div>
-            <div class="project-title">
-              <a href="http://www.cicadas-song.com/" target="_blank">
-              Cicadas Song
-              </a>
-            </div>
-            <a class="project-git" href="https://github.com/giovanni-da-rumore/cicadas-song" target="_blank">
-              Github
-            </a>
-
-             <p class="project-descr"> Named after a Platonic Myth and modeled off Genius,
-              Cicadas Song is a digital library that allows users to read, upload and annotate texts.
-              The site runs primarily on a Backbone.js front end, straddling a RESTful Rails API.
-              It also uses jQuery, stores images on AWS S3, and supports multi-table lookup through PgSearch.</p>
-
-
-          </article>
-          <article class="even">
-            <div class="project-image">
-              <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">
-                <img src="./images/asteroids_2.png" alt="Asteroids"/>
-              </a>
-             </div>
-            <div class="project-title">
-              <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">
-              Ancient Asteroids
-              </a>
-            </div>
-              <a class="project-git" href="https://github.com/giovanni-da-rumore/Ancient-Asteroids" target="_blank">
-                Github
-              </a>
-
-             <p class="project-descr"> Ancient Asteroids is a spin off the classic arcade game of similar name,
-              but with Ancient Greek Ruins for levels and Ancient Greek vase paintings for asteroids.
-              It runs primarily through Javascript and jQuery,
-              and uses HTML5 Canvas for illustration. </p>
-          </article>
-
-          <article class="odd">
-            <div class="project-image">
-              <a href="https://github.com/giovanni-da-rumore/Chess" target="_blank">
-              <img src="./images/chess.png" alt="Chess"/>
-            </a>
-             </div>
-            <div class="project-title">
-              <a href="https://github.com/giovanni-da-rumore/Chess" target="_blank">
-                Chess
-              </a>
-            </div>
-            <a class="project-git" href="https://github.com/giovanni-da-rumore/Chess" target="_blank">
-              Github
-            </a>
-
-
-             <p class="project-descr"> A simple chess game to be played in the terminal.
-                The game is built in Ruby, and uses Colorize and UTF-8 characters for an aesthetically pleasing
-                interface.
-              </p>
-          </article> -->
+            In addition, I've done freelance work for as diverse companies as environmental agencies and water transportation groups.
+            If you have a minute to spare, you maybe you'll enjoy this <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">javascript version of asteroids</a> I made a while back.  
         </section>
         <section class="content-section group">
-          <h3 id="skills" class="content-header">Skills</h3>
+          <h3 id="tools" class="content-header">Tools</h3>
           <p>
-              PHP, Javascript, Ruby on Rails, Backbone.js, Python, Ember.js, SCSS/CSS, SQL Git, Rspec
-            <!-- <ul class="skills-pics"> -->
-                
-              <!-- <li> <img src="./images/ruby.png" alt="Ruby" /></li>
-              <li> <img src="./images/rails.png" alt="Ruby on Rails" /></li>
-              <li> <img src="./images/js.png" alt="Javascript" /></li>
-              <li> <img src="./images/backbone.png" alt="Backbone.js" /></li>
-              <li> <img src="./images/jquery.png" alt="jQuery" /></li>
-              <li> <img src="./images/css.png" alt="CSS" /></li>
-              <li> <img src="./images/html.png" alt="HTML" /></li>
-              <li> <img src="./images/python.png" alt="Python" /></li>
-              <li> <img src="./images/psql.png" alt="SQL" /></li>
-              <li> <img src="./images/git.png" alt="Git" /></li> -->
-
-            <!-- </ul> -->
+              PHP, Javascript, Backbone.js, Ember.js, Ruby on Rails, Python, SCSS/CSS, SQL Git, Rspec
           </p>
         </section>
         <section class="content-section group">
@@ -157,9 +58,7 @@
             <a href="https://github.com/giovanni-da-rumore" class="end-link"  target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/jeremylilly" class="end-link last-link"  target="_blank">Linkedin</a>
       </section>
-      <section class="content-section group">
-          <div class="sign-off"><i>Vale</i></div>
-      </section>
+      <div class="sign-off"><i>- Vale</i></div>
     </main>
   </body>
 <html>

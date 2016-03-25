@@ -1,3 +1,10 @@
+/*constants
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  992px !default;
+$screen-lg:                  1200px !default;
+*/
+
 html, body, header, nav, h1, a, h3, h2,
 ul, li, input, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -41,14 +48,25 @@ body {
   background: #f1f1f1;
 }
 
+* {
+    box-sizing: border-box !important;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 
 .header-wrapper {
     width: 100%;
     overflow: hidden;
     position: relative;
-    /*height: 550px;*/
-    min-height: 468px;
-    height: 535px;
+    /*min-height: 420px;*/
+    /*min-height: 400px;*/
+    /*height: 535px;*/
+    min-height: 425px;
     overflow: hidden;
 }
 
@@ -58,22 +76,22 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    /*display: block;*/
     background: #000;
-    opacity: 0.2;
+    background: url('images/download');
+    opacity: 0.6;
     position: absolute;
     z-index: 4;
 }
 
-
-video {
-    /*smallest video should be 920px*/
+/*uncomment video height, translate and img translate to get video sizing back*/
+video, img.header-img {
     position: absolute;
     z-index: 4;
     left: 50%;
     min-height: 100%;
     min-width: 100%;
-    transform: translate(-50%, -13%);
+    /*transform: translate(-50%, -13%);*/
+    transform: translateX(-50%);
 }
 
 .header-info {
@@ -84,10 +102,12 @@ video {
     z-index: 5;
 }
 
+.js-info {
+    cursor: pointer;
+}
 
 h3 {
     color: #3f87b3;
-    /*color: #326b8d;*/
 }
 
 .header-text {
@@ -106,7 +126,8 @@ h3 {
 
 .personal-picture {
     margin: auto;
-    margin-top: 145px;
+    /*margin-top: 145px;*/
+    margin-top: 140px;
 }
 
 
@@ -119,20 +140,6 @@ h1 {
   line-height: 1;
   letter-spacing: 1.3;
 }
-
-/*h2 {
-  font-size: 34px;
-  font-weight: bold;
-  color: #fff;
-  -webkit-text-stroke: 1px #ccc;
-  float: left;
-  position: absolute;
-  top: 275px;
-  left: 25px;
-  letter-spacing: 1.1;
-  quotes: "\201C""\201D""\2018""\2019";
-
-}*/
 
 
 h2:before {
@@ -148,26 +155,13 @@ h2:after {
   margin-left: -9px;
 }
 
-.group:after {
-  display: block;
-  content: "";
-  clear: both;
-
-}
-
-
-* {
-    box-sizing: border-box !important;
-}
-
-
 main {
   margin: auto;
   display: block;
   width: 100%;
   padding: 0 15px;
   height: 100%;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: auto;
   padding-top: 15px;
 }
@@ -180,6 +174,10 @@ main {
     min-height: 0;
 }
 
+.content-section:nth-child(even) {
+    float: right;
+}
+
 .content-section:last-of-type {
     min-height: 0;
 }
@@ -188,44 +186,6 @@ main {
     font-size: 24px;
     padding-bottom: 10px;
 }
-
-
-.left-sidebar {
-  background: #26619C;
-  background: #003366;
-  float: left;
-  border-left: 1px solid #fff;
-}
-
-.side-list {
-  padding: 20px;
-  padding-top: 10px;
-  width: 169px;
-}
-
-.side-list li {
-  padding: 10px;
-  padding-left: 5px;
-  width: 120px;
-  color: #f5f5f5;
-  font-size: 24px;
-  font-weight: bold;
-  float: left;
-  text-align: left;
-}
-
-
-.side-list a {
-  padding-bottom: 5px;
-  padding-right: 3px;
-  letter-spacing: 1.2;
-
-}
-
-.side-list a:hover {
-  border-bottom: 1px solid #f5f5f5;
-}
-
 
 
 .main-section {
@@ -245,105 +205,6 @@ main {
   padding-top: 35px;
   padding-bottom: 10px;
   letter-spacing: 1.2;
-  /*margin-left: -10px;*/
-
-}
-
-
-.skills-pics li {
-  padding: 15px;
-  padding-left: 30px;
-  float: left;
-}
-
-.skills-pics {
-  float: left;
-  margin-left: 10px;
-}
-
-.skills-pics img {
-  width: 65px;
-  height: 65px;
-
-}
-
-
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-
-.project-image {
-  display: block;
-  float: left;
-  width: 210px;
-  height: 185px;
-  margin-top: 21px;
-  background: #000;
-  border: 1px solid #ccc;
-
-}
-
-.project-image img {
-  opacity: 1;
-  transition: opacity 0.1
-}
-
-.project-image img:hover {
-  opacity: 0.7;
-}
-
-
-
-.project-title {
-  float: left;
-  width: 250px;
-  font-weight: 400;
-  font-family: 'Roboto', arial, sans-serif;
-  font-size: 23px;
-  margin-left: 25px;
-  margin-bottom: 8px;
-  font-style: italic;
-  letter-spacing: 1.1;
-}
-
-.project-title:hover {
-  color: #26619c;
-}
-
-.project-git {
-  font-size: 18px;
-  display: bock;
-  float: left;
-  margin-top: 3px;
-  color: #26619c;
-}
-
-.project-git:hover {
-  border-bottom: 1px solid #26619c;
-  color: #003366;
-}
-
-.project-descr {
-  float: left;
-  width: 400px;
-  margin-left: 28px;
-
-}
-
-.email {
-    font-size: 20px;
-    color: #3f87b3;
-    color: #26619c;
-}
-
-.email:hover {
-    color: #326b8d;
-    color: #003366;
-    font-size: 22px;
-    transition: all 0.3s;
 }
 
 
@@ -377,63 +238,66 @@ img {
   display: block;
 }
 
+a {
+    color: #3f87b3;
+    /*color: #326b8d; */
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #26619c;
+    /*color: #003366;*/
+    /*color: #326b8d;*/
+}
+
 
 .end-link {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
-    color: #3f87b3;
-    color: #26619c;
-  /*float: left;
-  margin-top: 20px;
-  margin-right: 85px;
-  margin-left: 27px;
-  color:  #26619c;
-  font-size: 28px;
-  font-weight: bold;*/
 }
 
 .end-link:hover {
-    color: #326b8d;
-    color: #3f87b3;
-    margin-right: 10px;
-    /*color: #003366;*/
-    font-size: 22px;
-    transition: all 0.3s;
-  /*color: #003366;
-  border-bottom: 1px solid #26619c;*/
+    /*color: #26619c;*/
 }
 
 .end-link:after {
     content: '|';
-    color: #26619c;
     color: #000;
-    padding-left: 10px;
-    font-size: 24px;
+    margin-left: 5px;
 }
 
 .end-link:last-of-type:after {
-    content: "";
-    
+    content: "";    
 }
-
 
 .last-link {
   margin-right: 0px;
 }
 
-.inline-link {
-  color: #26619c;
+
+.sign-off {
+    text-align: center;
+    width: 100%;
+    transform: translateX(15%);
 }
 
-
-
-@media (min-width: 778px) {
+@media (min-width: 768px) {
     .content-section {
         width: 45%;
         margin: 0 15px;
         min-height: 150px;
+        min-height: 205px;
+    }
+    
+    .sign-off {
+        float: right;
+    }
+    
+    .header-wrapper {
+        min-height: 450px;
     }
 }
+
 
 @media (max-width: 675px) {
     .header-text {
@@ -446,6 +310,10 @@ img {
         position: relative;
         width: 100%;
         text-align: center;
+    }
+    
+    .header-text.right {
+        padding-top: 25px;
     }
     
     .personal-picture {
