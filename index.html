@@ -2,63 +2,144 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Jeremy Lilly's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-  <body>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <!-- <link rel="stylesheet" href="main.css" type="text/css"/> -->
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
+  <body>
     <script src="library/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="assets/build/app.js"></script>
     
     <div class="header-wrapper">
         <!-- autoplay -->
 		<!-- <video id="header-video" preload="metadata" autoplay poster="">
-			<source src="videos/great_beauty.webm" type="video/webm">
-			<source src="videos/great_beauty.mp4" type="video/mp4">
+			<source src="videos/amalfi.webm" type="video/webm">
+			<source src="videos/amalfi.mp4" type="video/mp4">
 		</video> -->
-        <!-- <div class="header-img"></div> -->
-        <img class="header-img" src="images/mv_screenshot.png" alt="background-header" />
+         <div class="header-img"></div>
         <header class="header-info">    
             <h1 class="header-text left js-info">Jeremy Lilly</h1>
             <div class="personal-picture">
-            <img class="prof-pic" src="./images/prof_pic.jpg"/>
+            <img class="prof-pic" src="assets/images/prof_pic.jpg"/>
             </div>
             <h1 class="header-text right js-info">Web Developer</h1>
         </header>
     </div>
     <main class="main-content group">
-        <section class="content-section group">
-            <h3 id="about" class="content-header">About</h3>
-            <p>
-              I'm a New York City web developer who, before converting to the darkside, studied Classics at Columbia. 
-              I'm interested in all things language-related - human, computer, musical, visual κτλ. 
-              Drop me a line if you too, <i>gentil lecteur</i>, would like to help old works flourish in the new age.
-              Data, Design and David Bowie are also welcome conversation topics.
-            </p>  
-        </section>
-        <section class="content-section group">
-            <h3 id="projects" class="content-header">Work</h3>
-            
-            I currently work as a full-stack engineer at <a href="http://lacrosserecruits.com" target="_blank">SportsRecruits</a>.
-            In addition, I've done freelance work for as diverse companies as environmental agencies and water transportation groups.
-            If you have a minute to spare, you maybe you'll enjoy this <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">javascript version of asteroids</a> I made a while back.  
-        </section>
-        <section class="content-section group">
-          <h3 id="tools" class="content-header">Tools</h3>
-          <p>
-              PHP, Javascript, Backbone.js, Ember.js, Ruby on Rails, Python, SCSS/CSS, SQL Git, Rspec
-          </p>
-        </section>
-        <section class="content-section group">
-            <h3 id="contact" class="content-header">Contact</h3>
-            <p>
-            </p>
-            <a href="mailto:jsl2184@gmail.com" class="end-link">jsl2184@gmail.com</a>
-            <a href="https://github.com/giovanni-da-rumore" class="end-link"  target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/jeremylilly" class="end-link last-link"  target="_blank">Linkedin</a>
-      </section>
-      <div class="sign-off"><i>- Vale</i></div>
+        <div class="sections-container">
+            <section class="content-section group">
+                <h3 id="about" class="content-header">About</h3>
+                <p>
+                  I'm a New York City web developer who, before converting to the darkside, studied Classics at Columbia. 
+                  I'm interested in all things language-related, particularly the intersection between humanities and technology.
+                  Drop me a line if you too, <i>gentil lecteur</i>, would like to help old works flourish in the new age.
+                  Data, Design and David Bowie are also welcome conversation topics.
+                </p>  
+            </section>
+            <section class="content-section group">
+                <h3 id="projects" class="content-header">Work</h3>
+                
+                I currently work as a full-stack engineer at <a href="http://lacrosserecruits.com" target="_blank">SportsRecruits</a>.
+                In addition, I've done internal projects for companies whose specialties range from environmental surveying, to local business promotion, to water transportation.
+                If you need to kill a minute or two, perhaps you'll enjoy this <a href="http://www.jeremylilly.com/Ancient-Asteroids" target="_blank">javascript version of asteroids</a> I made a while back, complete with 
+                Ancient Greek vase paintings, Sicilian temples and Kraftwerk.  
+            </section>
+            <section class="content-section group">
+              <h3 id="tools" class="content-header">Tools</h3>
+              <p>
+                  <!-- <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div>
+                  <div class="tool-wrapper">
+                      <img src="assets/images/python.png" alt="" />
+                      <p>
+                          Python
+                      </p>
+                  </div> -->
+                  PHP, Javascript, Backbone.js, Ember.js, Ruby, Rails, Python, Node, SCSS/CSS, SQL, Git, Rspec
+              </p>
+            </section>
+            <section class="content-section group">
+                <h3 id="contact" class="content-header">Contact</h3>
+                <p>
+                </p>
+                <a href="mailto:jsl2184@gmail.com" class="end-link">jsl2184@gmail.com</a>
+                <a href="https://github.com/giovanni-da-rumore" class="end-link"  target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/jeremylilly" class="end-link last-link"  target="_blank">Linkedin</a>
+          </section>
+      <!-- </div> -->
+     <!-- 
+      <section class="content-section group">
+          <div class="quote-section"> 
+              <div class="quote-nav group"> -
+                  <h3>Excerpts to pass the time or give some indication of my aesthetic sensibilities</h3>         
+              </div>
+              <p>
+                  
+              <div class="quote">
+                  Passer-by, sin beyond any sin	</br> 
+                  Is the sin of blindness of souls to other souls.</br>	 
+                  And joy beyond any joy is the joy	 </br>
+                  Of having the good in you seen, and seeing the good	 </br>
+                  At the miraculous moment!</br>
+              </p>
+              </div>
+              <div class="quote-author"><i>- Edgar Lee Masters</i></div>
+          </div>         
+    </section>
+      <section class="content-section group">
+            <h3 class="another">Another?</h3>     
+          <div class="quote-section">
+             Animus humanus amor non est,
+             Sed ab ipso Amor procedit et
+             Ideo seipso non diliget,
+             Sed Amore qui seipso procedit. 
+          </div>         
+    </section> -->
+      <!-- <div class="sign-off"><i>- Vale</i></div> -->
+  </div>
     </main>
   </body>
 <html>
