@@ -133,6 +133,10 @@ h3 {
 
 .header-text.left {
     left: 25px;
+    
+    @media (max-width: 500px) {
+        top: 35px;
+    }
 }
 .header-text.right {
     right: 25px;
