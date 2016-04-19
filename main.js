@@ -8,7 +8,7 @@ $(document).ready(function(){
     })
   
     $(window).scroll(function() {
-        if (window.innerWidth < 500) {
+        if (window.innerWidth < 450) {
             return;
         }
         var affixed = false;
