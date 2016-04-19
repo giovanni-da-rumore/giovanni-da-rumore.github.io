@@ -8,6 +8,9 @@ $(document).ready(function(){
     })
   
     $(window).scroll(function() {
+        if (window.innerWidth < 500) {
+            return;
+        }
         var affixed = false;
         var curPoint = $(window).scrollTop();
         var windowHeight = $(window).height();
