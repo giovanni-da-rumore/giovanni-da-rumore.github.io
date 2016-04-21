@@ -2,6 +2,9 @@
 $(document).ready(function(){
     var navHeight = 80;
     var stopPoint = parseInt($('.header-wrapper').css('height').slice(0, -2)) - navHeight;
+    if (browserIsMobile) {
+        $('.header-wrapper').css({'background-attachment': 'scroll'});
+    }
     $(document).on('click', '.js-info', function () {
         var pos = $('#contact').position().top;
         $('html, body').animate({scrollTop: stopPoint}, 500);
@@ -12,6 +15,7 @@ $(document).ready(function(){
     });
   
     $(window).scroll(function() {
+        if (browserIsMobile()) { return; }
         var heightProperty = (window.innerWidth < 768) ? 'auto' : '100%';
         var affixed = false;
         var curPoint = $(window).scrollTop();
@@ -25,8 +29,8 @@ $(document).ready(function(){
         }
     });
     
-    setTimeout(function () {
-        $('.black-screen').addClass('hidden');
-    }, 400);
-    
+    function browserIsMobile () {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);    
+    };
+
 });
