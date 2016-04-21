@@ -2,7 +2,8 @@
 $(document).ready(function(){
     var navHeight = 80;
     var stopPoint = parseInt($('.header-wrapper').css('height').slice(0, -2)) - navHeight;
-    if (browserIsMobile) {
+    if (browserIsMobile()) {
+        debugger;
         $('.header-wrapper').css({'background-attachment': 'scroll'});
     }
     $(document).on('click', '.js-info', function () {
