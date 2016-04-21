@@ -5,11 +5,11 @@ $(document).ready(function(){
     $(document).on('click', '.js-info', function () {
         var pos = $('#contact').position().top;
         $('html, body').animate({scrollTop: stopPoint}, 500);
-    })
+    });
     
-    $(window).on('resize', function () {
+    $(window).resize(function () {
         stopPoint = parseInt($('.header-wrapper').css('height').slice(0, -2)) - navHeight;
-    })
+    });
   
     $(window).scroll(function() {
         var heightProperty = (window.innerWidth < 768) ? 'auto' : '100%';
@@ -20,7 +20,7 @@ $(document).ready(function(){
             $('.main-content').css({'height': windowHeight - navHeight, 'overflow-y': 'scroll'})
             var affixed = true;
         } else if (curPoint < stopPoint - 15) {
-            $('.main-content').css({'height': '100%', 'overflow-y': 'initial'})    
+            $('.main-content').css({'height': heightProperty, 'overflow-y': 'initial'})    
             affixed = false;
         }
     });
