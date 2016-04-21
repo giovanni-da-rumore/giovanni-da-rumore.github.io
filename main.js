@@ -6,11 +6,13 @@ $(document).ready(function(){
         var pos = $('#contact').position().top;
         $('html, body').animate({scrollTop: stopPoint}, 500);
     })
+    
+    $(window).on('resize', function () {
+        stopPoint = parseInt($('.header-wrapper').css('height').slice(0, -2)) - navHeight;
+    })
   
     $(window).scroll(function() {
-        if (window.innerWidth < 450) {
-            return;
-        }
+        var heightProperty = (window.innerWidth < 768) ? 'auto' : '100%';
         var affixed = false;
         var curPoint = $(window).scrollTop();
         var windowHeight = $(window).height();
@@ -22,5 +24,9 @@ $(document).ready(function(){
             affixed = false;
         }
     });
+    
+    setTimeout(function () {
+        $('.black-screen').addClass('hidden');
+    }, 400);
     
 });
