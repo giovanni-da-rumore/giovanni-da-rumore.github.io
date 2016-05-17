@@ -21,11 +21,11 @@ $(document).ready(function(){
             var affixed = false;
             var curPoint = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (curPoint > stopPoint && !affixed && window.innerWidth > 800) {
-                $('.main-content').css({'height': windowHeight - navHeight, 'overflow-y': 'scroll'})
+            if (curPoint > stopPoint && !affixed && window.innerWidth > 835 && window.innerHeight > 500) {
+                $('.body-wrapper').css({'height': windowHeight - navHeight, 'overflow-y': 'scroll'})
                 var affixed = true;
             } else if (curPoint < stopPoint - 15) {
-                $('.main-content').css({'height': heightProperty, 'overflow-y': 'initial'})    
+                $('.body-wrapper').css({'height': heightProperty, 'overflow-y': 'initial'})    
                 affixed = false;
             }        
         });

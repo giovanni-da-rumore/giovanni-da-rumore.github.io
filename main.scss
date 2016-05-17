@@ -1,7 +1,8 @@
 /*screen breaks */
 $screen-xs-min:                  480px !default;
 // $screen-sm-min:                  768px !default;
-$screen-sm-min:                  800px !default;
+$screen-sm-min:                  810px !default;
+// $screen-sm-min:                  835px !default;
 $screen-md-min:                  992px !default;
 $screen-lg-min:                  1200px !default;
 
@@ -48,6 +49,7 @@ body {
   font-weight: 400;
   background: #eee;
   line-height: 22px;
+  letter-spacing: 1.1px;
 }
 
 body, html {
@@ -188,12 +190,19 @@ h3 {
   width: 200px;
   height: 225px;
 }
+.body-wrapper {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    background: #eee;
+    
+}
 
 main {
   margin: auto;
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 15px 20px;
   max-width: 1150px;
   margin: auto;
   background: #eee;
@@ -201,7 +210,8 @@ main {
   position: relative;
   padding-top: 25px;
   @media (min-width: $screen-sm-min) {
-      padding-top: 0px;
+      padding: 15px;
+    //   padding-top: 0px;
       height: 100%;
   }
 }
