@@ -17,11 +17,11 @@ $(document).ready(function(){
   
     if (!browserIsMobile()) {
         $(window).scroll(function() {
-            var heightProperty = (window.innerWidth < 768) ? 'auto' : '100%';
+            var heightProperty = (window.innerWidth < 800) ? 'auto' : '100%';
             var affixed = false;
             var curPoint = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (curPoint > stopPoint && !affixed) {
+            if (curPoint > stopPoint && !affixed && window.innerWidth > 800) {
                 $('.main-content').css({'height': windowHeight - navHeight, 'overflow-y': 'scroll'})
                 var affixed = true;
             } else if (curPoint < stopPoint - 15) {
