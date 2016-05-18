@@ -7,8 +7,11 @@ $(document).ready(function(){
         $('.header-info').addClass('is-mobile');
     }
     $(document).on('click', '.js-info', function () {
-        var pos = $('#contact').position().top;
-        $('html, body').animate({scrollTop: stopPoint}, 500);
+        if (window.innerWidth > 835 && window.innerHeight > 500) {
+            $('html, body').animate({scrollTop: stopPoint + 10}, 500);
+        } else {
+            $('html, body').animate({scrollTop: stopPoint + navHeight}, 500);
+        }
     });
     
     $(window).resize(function () {
