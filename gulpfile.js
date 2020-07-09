@@ -3,8 +3,8 @@ var gulp = require('gulp'),
  	sourcemaps = require('gulp-sourcemaps'),
  	uglify = require('gulp-uglify'),
 	gutil = require('gulp-util'),
-  concat = require('gulp-concat'),
-  plumber = require('gulp-plumber'),
+   	concat = require('gulp-concat'),
+   	plumber = require('gulp-plumber'),
 	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {

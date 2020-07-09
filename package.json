@@ -4,24 +4,33 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "serve": "webpack --config webpack.config.js --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bower": "^1.7.2",
-    "express": "^4.13.4",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.1",
-    "gulp-util": "^3.0.7",
-    "serve-favicon": "^2.3.0"
+    "babel": "^6.23.0",
+    "compression": "^1.7.4"
   },
   "devDependencies": {
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "^2.1.1"
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.4.2",
+    "extract-loader": "^4.0.0",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.25.1-test.1",
+    "sass-loader": "^8.0.2",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.2.3"
   }
 }

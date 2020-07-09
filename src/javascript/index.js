@@ -14,6 +14,43 @@ $(document).ready(function(){
         }
     });
     
+    // TODO implement when remove jquery
+    // function scrollTo (point, duration) {
+    //     // cancel if already on element
+    //     if (document.scrollingElement.scrollTop === point) return;
+    //     const totalScrollDistance = Math.abs(point - document.scrollingElement.scrollTop);
+    //     let scrollY = document.scrollingElement.scrollTop, oldTimestamp = null;
+    
+    //     function step (newTimestamp) {
+    //         if (oldTimestamp !== null) {
+    //             // if duration is 0 scrollY will be -Infinity
+    //             if (point >= scrollY) {
+    //                 scrollY += totalScrollDistance * (newTimestamp - oldTimestamp) / duration;
+    //                 if (scrollY >= point) return document.scrollingElement.scrollTop = point;
+    //             } else {
+    //                 scrollY -=  totalScrollDistance * (newTimestamp - oldTimestamp) / duration;
+    //                 if (scrollY <= point) return document.scrollingElement.scrollTop = point;
+    //             }
+    //             document.scrollingElement.scrollTop = scrollY;
+    //         }
+    //         oldTimestamp = newTimestamp;
+    //         window.requestAnimationFrame(step);
+    //     }
+    //     window.requestAnimationFrame(step);
+    // }
+
+    // document.querySelectorAll('.js-info').forEach(function (el) {
+    //     el.onclick = function() {
+    //         if (window.innerWidth > 835 && window.innerHeight > 500) {
+    //             // $('html, body').animate({scrollTop: stopPoint + 10}, 500);
+    //             scrollTo(stopPoint + 10, 500)
+    //         } else {
+    //             scrollTo(stopPoint + navHeight, 500)
+    //         }
+    //     }
+    // })
+ 
+    
     $(window).resize(function () {
         // stopPoint = parseInt($('.header-wrapper').css('height').slice(0, -2)) - navHeight;
         var heightProperty = (window.innerWidth < 800 || innerHeight < 450) ? 'auto' : '100%';
@@ -41,7 +78,6 @@ $(document).ready(function(){
             // }        
         // });
     // }
-    
     function browserIsMobile () {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);    
     };
