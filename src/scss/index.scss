@@ -76,8 +76,10 @@ body, html {
     background: url('images/icarus.jpg');
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    background-attachment: scroll;
     @media (min-width: $screen-sm-min) {
+      background-attachment: fixed;
         height: 100%;
         min-height: 500px;
     }
@@ -111,11 +113,11 @@ video, img.header-img {
     top: 0;
     z-index: 5;
 
-    &.is-mobile {
-        .personal-picture {
-            margin-top: 150px;
-        }
-    }
+    // &.is-mobile {
+    //     .personal-picture {
+    //         margin-top: 150px;
+    //     }
+    // }
 }
 
 .js-info {
@@ -195,6 +197,44 @@ h3 {
     z-index: 10;
     position: relative;
     background: #eee;
+    height: auto;
+    @media screen and (max-width: 800px), screen and (max-height: 450px) {
+      height: 100%;
+    }
+
+    // @media screen and (max-height: 450px) {
+    //   height: 100%;
+    // }
+
+    @media screen and (min-width: 835px) and (min-height: 500px) {
+      height: calc(100vh - 80px);
+    }
+
+    // var heightProperty = (window.innerWidth < 800 || innerHeight < 450) ? 'auto' : '100%';
+    // var windowHeight = $(window).height();
+    // if (!browserIsMobile() && window.innerWidth > 835 && window.innerHeight > 500) {
+    //   // $('.body-wrapper').css({'height': windowHeight - navHeight, 'overflow-y': 'scroll'});
+    //   $('.body-wrapper').css({'height': windowHeight - navHeight })
+    // } else {
+    //   $('.body-wrapper').css({'height': heightProperty, 'overflow-y': 'initial'});
+    // }
+    //
+
+    // @media screen and (min-width: 800px) and (min-height: 500px) {
+    //   height: calc(100vh - 80px);
+    //
+    // }
+    //
+    // @media screen and (max-width: 800px) or (max-height: 450px) {
+    //   height: auto;
+    // }
+    // @media (max-width)
+    // @media (max-width: $screen-xs-min) {
+    //
+    // }
+
+
+    // window.innerWidth > 835 && window.innerHeight > 500
 
 }
 
